@@ -36,7 +36,6 @@ public class Bst {
     void inorderRec(Node root) {
         if (root != null) {
             inorderRec(root.getLeft());
-            System.out.println(root.getData());
             inorderRec(root.getRight());
         }
     }
