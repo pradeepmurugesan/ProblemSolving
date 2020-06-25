@@ -1,4 +1,7 @@
+package factory;
+
 import commons.tree.BinaryTree;
+import commons.tree.Bst;
 
 public class TreeFactory {
 
@@ -20,5 +23,15 @@ public class TreeFactory {
         }
 
         return tree;
+    }
+
+    public static Bst aBST(int numberOfNodes) {
+        Bst bst = new Bst();
+
+        for (int i = 1; i <= numberOfNodes; i++) {
+            bst.insert(i);
+        }
+
+        return bst;
     }
 }
