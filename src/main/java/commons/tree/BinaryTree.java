@@ -37,8 +37,6 @@ public class BinaryTree {
             } else
                 q.add(temp.getRight());
         }
-        System.out.println("inserted: " + key);
-        inorder();
     }
 
     public void inorder()  {
